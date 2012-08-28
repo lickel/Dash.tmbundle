@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/textmate.rb"
+
+prefix=ENV["TM_DASH_PREFIX"]
+term=ENV["TM_SELECTED_TEXT"] || ENV["TM_CURRENT_WORD"]
+term=term.strip unless term.nil?
+
+TextMate.exit_show_tool_tip("Please select a term to look up.") if term.empty?
+
+system "open dash://#{prefix}#{term}"
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~h</string>
+	<key>name</key>
+	<string>Open in Dash</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source</string>
+	<key>uuid</key>
+	<string>C18677E6-205F-4871-B50A-83BD042DB6F5</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

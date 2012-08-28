@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>nqnz@yvpxry.pbz</string>
+	<key>contactName</key>
+	<string>Adam Lickel</string>
+	<key>description</key>
+	<string>This is a simple bundle to integrate with &lt;a href="http://itunes.apple.com/us/app/dash-docs-snippets/id458034879?mt=12"&gt;Dash.app&lt;/a&gt;</string>
+	<key>name</key>
+	<string>Dash</string>
+	<key>uuid</key>
+	<string>ADC486C3-0633-4153-BFC5-4BFCDF33C591</string>
+</dict>
+</plist>
